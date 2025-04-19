@@ -1,94 +1,139 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マインクラフト鉄道サーバー公式サイト</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>新桜共産党 - 公式ホームページ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
     }
-    header, footer {
-      background-color: #2d2d2d;
-      color: white;
-      padding: 1em;
+
+    header {
+      background-color: #d4002f;
+      padding: 1.5rem;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+
     nav {
-      background-color: #444;
+      background-color: #1a1a1a;
       display: flex;
       justify-content: center;
-      gap: 2em;
-      padding: 0.5em;
+      gap: 2rem;
+      padding: 1rem;
     }
+
     nav a {
-      color: white;
+      color: #e0e0e0;
       text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .hero {
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      text-align: center;
+      padding: 4rem 2rem;
     }
-    main {
-      padding: 2em;
-      max-width: 1000px;
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff9999;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
       margin: auto;
-      background: white;
+      color: #cccccc;
     }
-    section {
-      margin-bottom: 3em;
+
+    .sections {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
     }
-    h2 {
-      border-left: 5px solid #4CAF50;
-      padding-left: 10px;
+
+    .section {
+      margin-bottom: 2rem;
+      border-left: 4px solid #d4002f;
+      padding-left: 1rem;
+    }
+
+    .section h3 {
+      color: #ff9999;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>マインクラフト鉄道サーバー公式サイト</h1>
+    <h1>新桜共産党</h1>
   </header>
   <nav>
-    <a href="#gaiyou">概要</a>
-    <a href="#rekishi">歴史</a>
-    <a href="#koneta">小ネタ</a>
-    <a href="#kaisya">鉄道会社一覧</a>
+    <a href="#">政策</a>
+    <a href="#">声明</a>
+    <a href="#">活動記録</a>
+    <a href="#">加入案内</a>
+    <a href="#">お問い合わせ</a>
   </nav>
-  <main>
-    <section id="gaiyou">
-      <h2>① 概要</h2>
-      <p>このサーバーは、マインクラフト内で鉄道を建設・運行することを目的とした、プレイヤーによるコミュニティ運営型サーバーです。鉄道網の構築や、駅・車両のデザイン、鉄道会社の設立など、さまざまな楽しみ方があります。</p>
-    </section>
 
-    <section id="rekishi">
-      <h2>② 歴史</h2>
-      <p>当サーバーは20XX年に発足し、少人数のプレイヤーによる路線建設から始まりました。その後、徐々に規模が拡大し、現在では数十の路線・鉄道会社が存在しています。</p>
-    </section>
+  <div class="hero">
+    <h2>「未来は軍備では守れない」</h2>
+    <p>
+      私たちは、過剰な軍拡と財政赤字に警鐘を鳴らし、持続可能な国家運営を目指す未来派市民政党です。
+    </p>
+  </div>
 
-    <section id="koneta">
-      <h2>③ 小ネタ</h2>
-      <ul>
-        <li>車両の自動運転にはコマンドブロックやRedstone回路が使われています。</li>
-        <li>実在の鉄道会社をモチーフにしたデザインも人気。</li>
-        <li>地下鉄、モノレール、ケーブルカーなど多様な交通機関が存在。</li>
-      </ul>
-    </section>
+  <div class="sections">
+    <div class="section">
+      <h3>政策理念</h3>
+      <p>
+        ・軍事費の見直しと教育・医療への再配分<br>
+        ・省エネ・脱炭素型のインフラ政策<br>
+        ・地方経済の自立と縮小均衡型社会の実現
+      </p>
+    </div>
 
-    <section id="kaisya">
-      <h2>④ 鉄道会社一覧</h2>
-      <ul>
-        <li>マインクラフト中央鉄道株式会社（MCRT）</li>
-        <li>ブロックライン交通</li>
-        <li>ノーザンレールウェイズ</li>
-        <li>エンダーエクスプレス</li>
-        <li>サンドストーン急行</li>
-      </ul>
-    </section>
-  </main>
+    <div class="section">
+      <h3>声明（2025年4月）</h3>
+      <p>
+        国防予算の増額に対し、我々は「本当に国民の安全を守る手段か」という観点から再考を要求します。
+        持続可能な未来に向け、真の国益とは何かを問い続けます。
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>入党をご検討の方へ</h3>
+      <p>
+        若者・市民・専門家──立場を問わず、未来に責任を持つ意思をお持ちの方を歓迎します。
+        テクノロジーと倫理が調和する時代を共に築きましょう。
+      </p>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2025 マインクラフト鉄道サーバー公式サイト</p>
+    © 2025 新桜共産党. All Rights Reserved.
   </footer>
 </body>
 </html>
